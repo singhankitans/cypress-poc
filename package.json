@@ -1,4 +1,10 @@
 {
+
+  "scripts": {
+    "test":"cypress run --spec cypress/e2e/1-getting-started/*.js --headless",
+    "test1":"cypress run --spec cypress/e2e/2-advanced-examples/*.js --headed"
+  },
+
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.1",
     "cypress": "^10.8.0",

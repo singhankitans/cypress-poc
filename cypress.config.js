@@ -5,8 +5,8 @@ module.exports = defineConfig({
   reporterOptions: {
     charts: true,
     reportPageTitle: 'custom-title',
+    reportFilename: 'report',
     embeddedScreenshots: true,
-    inlineAssets: true,
     saveAllAttempts: false,
   },
   e2e: {
