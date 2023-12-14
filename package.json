@@ -2,7 +2,10 @@
 
   "scripts": {
     "test":"cypress run --spec cypress/e2e/1-getting-started/*.js --headless",
-    "test1":"cypress run --spec cypress/e2e/2-advanced-examples/*.js --headed"
+    "test1":"cypress run --spec cypress/e2e/2-advanced-examples/*.js --headed",
+    "test2":"cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headed",
+    "test3":"cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headless",
+    "test4":"cypress run --spec cypress/e2e/2-advanced-examples/web_test.cy.js --headed"
   },
 
   "devDependencies": {
