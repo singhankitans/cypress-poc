@@ -1,19 +1,52 @@
 {
 
   "scripts": {
-    "test":"cypress run --spec cypress/e2e/1-getting-started/*.js --headless",
-    "test1":"cypress run --spec cypress/e2e/2-advanced-examples/*.js --headed",
-    "test2":"cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headed",
-    "test3":"cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headless",
-    "test4":"cypress run --spec cypress/e2e/2-advanced-examples/web_test.cy.js --headed"
+
+    "test": "cypress run --spec cypress/e2e/1-getting-started/*.js --headless",
+
+    "test1": "cypress run --spec cypress/e2e/2-advanced-examples/*.js --headed",
+
+    "test2": "cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headed",
+
+    "test3": "cypress run --spec cypress/e2e/2-advanced-examples/api_test.cy.js --headless",
+
+    "test4": "cypress run --spec cypress/e2e/2-advanced-examples/web_test.cy.js --headed",
+
+    "test5": "cypress run --spec cypress/e2e/2-advanced-examples/swag_labs.cy.js --headed --browser chrome",
+
+    "test6": "npx cypress run --headed",
+
+    "test7": "cypress run --spec cypress/e2e/2-advanced-examples/email_test.cy.js --headed",
+
+    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 3 -s test6",
+
+    "debug": "npx cypress open",
+
+    "cy:run:chrome": "cypress run --browser chrome",
+
+    "cy:run:firefox": "cypress run --browser firefox"
+
   },
 
   "devDependencies": {
+
     "@shelex/cypress-allure-plugin": "^2.40.1",
+
     "cypress": "^10.8.0",
+
     "cypress-mochawesome-reporter": "^3.7.0"
+
   },
+
   "dependencies": {
-    "@cypress/xpath": "^2.0.3"
+
+    "@cypress/xpath": "^2.0.3",
+
+    "cypress-parallel": "^0.14.0",
+
+    "gmail-send": "^1.8.14"
+
   }
+
 }
+

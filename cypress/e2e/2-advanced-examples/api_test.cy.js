@@ -1,10 +1,13 @@
 const resp_data = require("../../fixtures/customer_payload.json");
 const resp_data1= require("../../fixtures/employee_payload.json");
+import apiUrls from '../../config/api_config.json';
+
 
 
 describe('My First Test', () => {
 it("Test case1 : GET API", () => {
-    cy.request("GET", "https://reqres.in/api/users?page=2").should((response) => {
+      cy.request("GET", apiUrls.getApiUrl).should((response) => {
+
       expect(response.status).to.eq(200);
     });
   });
@@ -14,7 +17,7 @@ it("Test case1 : GET API", () => {
     const queryParam = {key: 'key=qaclick123'};
     cy.request ({
       method : 'POST',
-      url    : 'https://rahulshettyacademy.com/maps/api/place/add/json',
+      url    : apiUrls.postApiUrl,
       body   :  resp_data,
       qs: queryParam
     }).as('req');
@@ -35,7 +38,7 @@ it("Test case1 : GET API", () => {
     cy.request ({
       method : 'PUT',
       failOnStatusCode: false,
-      url    : 'https://reqres.in/api/users/2',
+      url    : apiUrls.putApiUrl,
       body   :  resp_data1
     }).as('putReq');
 

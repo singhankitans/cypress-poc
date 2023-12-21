@@ -23,3 +23,28 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// cypress/support/commands.js
+
+// const gmailSend = require('gmail-send');
+
+// Cypress.Commands.add('sendEmail', (emailOptions) => {
+//   const email = gmailSend(emailOptions);
+//   email({}, function (err, message) {
+//     if (err) {
+//       throw new Error(`Failed to send email: ${err}`);
+//     }
+//     cy.log(`Email sent successfully: ${message}`);
+//   });
+// });
+
+Cypress.Commands.add('sendEmail', (emailOptions) => {
+    cy.exec('node sendEmail.js', { args: emailOptions })
+      .then((result) => {
+        console.log('Email sent successfully:', result.stdout);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error.stderr);
+        throw new Error('Failed to send email');
+      });
+  });

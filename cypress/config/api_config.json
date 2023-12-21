@@ -1,0 +1,5 @@
+{
+    "getApiUrl" : "https://reqres.in/api/users?page=2",
+    "putApiUrl" : "https://reqres.in/api/users/2",
+    "postApiUrl":"https://rahulshettyacademy.com/maps/api/place/add/json"
+}
