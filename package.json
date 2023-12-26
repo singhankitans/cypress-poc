@@ -18,7 +18,7 @@
 
     "test7": "cypress run --spec cypress/e2e/2-advanced-examples/email_test.cy.js --headed",
 
-    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 3 -s test6",
+    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 4 -s test6",
 
     "debug": "npx cypress open",
 

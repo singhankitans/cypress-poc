@@ -4,7 +4,7 @@
   "passes": 6,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-21T05:07:17.439Z",
-  "duration": 12141,
+  "start": "2023-12-26T10:46:44.323Z",
+  "duration": 11971,
   "file": "cypress/e2e/1-getting-started/todo.cy.js"
 }

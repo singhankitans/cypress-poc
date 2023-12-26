@@ -24,6 +24,13 @@ describe('My First Test', () => {
         cy.log('I run before every test in every spec file!!!!!!')
       })
 
+
+
+
+
+
+
+      
       // npm install cypress-parallel  -- install this for parallel execution
       // cmd to run tests in parallel -- npm run cy:parallel
 

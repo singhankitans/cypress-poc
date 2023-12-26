@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-21T05:08:26.273Z",
-  "duration": 47327,
+  "start": "2023-12-26T10:47:32.810Z",
+  "duration": 77641,
   "file": "cypress/e2e/2-advanced-examples/web_test.cy.js"
 }

@@ -4,7 +4,7 @@
   "passes": 2,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-21T05:07:17.328Z",
-  "duration": 18473,
+  "start": "2023-12-26T10:47:35.022Z",
+  "duration": 17788,
   "file": "cypress/e2e/2-advanced-examples/swag_labs.cy.js"
 }

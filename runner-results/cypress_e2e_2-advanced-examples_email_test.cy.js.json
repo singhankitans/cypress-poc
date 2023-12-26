@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 0,
+  "pending": 0,
+  "failures": 1,
+  "start": "2023-12-26T10:47:01.641Z",
+  "duration": 1656,
+  "file": "cypress/e2e/2-advanced-examples/email_test.cy.js"
+}
